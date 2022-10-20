@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpotiGabs</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="slidebar">
+            <div class="logo">
+                <span class="logo-text">SpotiGabs</span>
+            </div>
+            <div class="menu">
+                <p>Menu</p>
+                <a href="#" class="menu-active">
+                    <i class="fas fa-home"></i>
+                    Inicio
+                </a>
+                <a href="#">
+                    <i class="fas fa-compass"></i>
+                    Descubra
+                </a>
+                <a href="#">
+                    <i class="fas fa-heart"></i>
+                    Favoritos
+                </a>
+                <a href="#">
+                    <i class="fas fa-search"></i>
+                    Pesquisar
+                </a>
+            </div>
+            <div class="library">
+                <p>Biblioteca</p>
+                <a href="#">
+                    <i class="fas fa-compact-disc"></i>
+                    Musicas
+                </a>
+                <a href="#">
+                    <i class="fas fa-compact-disc"></i>
+                    Albuns
+                </a>
+                <a href="#">
+                    <i class="fas fa-music"></i>
+                    Artistas
+                </a>
+            </div>
+            <div class="my-playlist">
+                <p>Minhas Playlists</p>
+                <a href="#">
+                    <i class="fas fa-bookmark"></i>
+                    Taytayzinha
+                </a>
+                <a href="#">
+                    <i class="fas fa-bookmark"></i>
+                    Pop Songs
+                </a>
+                <a href="#">
+                    <i class="fas fa-bookmark"></i>
+                    RG123
+                </a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="top-content">
+                <div class="trending">
+                    <div class="left">
+                        <p class="type">Em alta</p>
+                        <p class="title">Midnights</p>
+                        <p class="artist">Taylor Swift</p>
+                        <p class="view">Lançamento dia 21 de outubro</p>
+                        <a href="#" class="btn-play">Pré registro</a>  
+                    </div>
+                    
+                </div>
+                <img src="./images/taytay.png">
+            </div>
+            <div class="bottom-content">
+                <div class="playlist">
+                    <div class="left-side">
+                        <div class="left-side-top">
+                            <div class="top-albums-title">
+                                <span>Mais populares</span>
+                                <span>Ver todos</span>
+                            </div>
+                            <div class="top-albums">
+                                <div class="card-albums">
+                                    <img src="./images/Taylor-TopAlbum1.jpeg" alt="">
+                                    <p>Taylor Swift</p>
+                                </div>
+                                <div class="card-albums">
+                                    <img src="./images/Lorde-TopAlbum.jpeg" alt="">
+                                    <p>Lorde</p>
+                                </div>
+                                <div class="card-albums">
+                                    <img src="./images/LanaDelRey-TopAlbum.jpeg" alt="">
+                                    <p>Lana Del Rey</p>
+                                </div>
+                                <div class="card-albums">
+                                    <img src="./images/DuaLipa-TopAlbum.jpeg" alt="">
+                                    <p>Dua Lipa</p>
+                                </div>
+                                <div class="card-albums">
+                                    <img src="./images/Avril-TopAlbum.jpeg" alt="">
+                                    <p>Avril Lavgne</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="left-side-bottom">
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <p class="adp-card-title">Tocando agora</p>
+                        <div class="audio-player">
+                            <img src="./images/capa-folklore.png" alt="" class="adp-img" id="image">
+                            <div class="adp-title">
+                                <p id="title">Seven</p>
+                                <p>Folklore</p>
+                                <p>Taylor Swift</p>
+                            </div>
+                        </div>
+                        <div class="adp-action">
+                            <a href="#" id="previous" onclick="previousSong()"><i class="fas fa-backward"></i></a>
+                            <a href="#" id="play" onclick="justPlay()"><i class="fas fa-play"></i></a>
+                            <a href="#" id="next" onclick="nextSong()""><i class="fas fa-forward"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="top">
+                <div class="profile">
+                    <div class="info">
+                        <p>Olá, <b>Taytay Jr</b></p>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="./images/profile-marilia.jpeg" alt="" class="song-img">
+                    </div>
+                </div>
+            </div>
+            <div class="recent-updates">
+                <h2>Tocadas recentemente</h2>
+                <div class="song">
+                    <img src="./images/Taylor-TopAlbum1.jpeg" alt="" class="song-img">
+                    <div class="song-title">
+                        <span>Seven</span>
+                        <span>Taylor Swift</span>
+                    </div>
+                </div>
+                <div class="song">
+                    <img src="./images/Avril-TopAlbum.jpeg" alt="" class="song-img">
+                    <div class="song-title">
+                        <span>Complicated</span>
+                        <span>Avril Lavgne</span>
+                    </div>
+                </div>
+                <div class="song">
+                    <img src="./images/DuaLipa-TopAlbum.jpeg" alt="" class="song-img">
+                    <div class="song-title">
+                        <span>Levitating</span>
+                        <span>Dua Lipa</span>
+                    </div>
+                </div>
+                <div class="song">
+                    <img src="./images/LanaDelRey-TopAlbum.jpeg" alt="" class="song-img">
+                    <div class="song-title">
+                        <span>Lana Del Rey</span>
+                        <span>Doin Time</span>
+                    </div>
+                </div>
+                <div class="song">
+                    <img src="./images/Lorde-TopAlbum.jpeg" alt="" class="song-img">
+                    <div class="song-title">
+                        <span>Lorde</span>
+                        <span>Mood Ring</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
